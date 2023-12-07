@@ -1,0 +1,165 @@
+.amazon-header {
+  background-color: #24252A;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 90px;
+
+  z-index: 100;
+}
+
+.amazon-header-left-section {
+  width: 180px;
+}
+
+@media (max-width: 800px) {
+  .amazon-header-left-section {
+    width: unset;
+  }
+}
+
+.logo-of-site {
+  color: white;
+}
+
+.cart-logo {
+  color: #1b1b1b;
+  background-color: #ffa31a;
+  padding: .1em .2em;
+  border-radius: 4px;
+  margin-left: 3px;
+}
+
+.header-link {
+  display: inline-block;
+  padding: 6px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+/*
+.header-link:hover {
+  border: 1px solid white;
+}
+
+.amazon-logo {
+  width: 100px;
+  margin-top: 5px;
+}
+
+.amazon-mobile-logo {
+  display: none;
+}
+*/
+
+.h2-products {
+  cursor: default;
+}
+
+.amazon-header-right-section {
+  width: 120px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.orders-link {
+  color: white;
+}
+
+.returns-text {
+  display: block;
+  font-size: 13px;
+}
+
+.orders-text {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.cart-link {
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.cart-icon {
+  width: 50px;
+}
+
+.cart-text {
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.cart-quantity {
+  color: rgb(240, 136, 4);
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+ion-icon {
+  font-size: 38px;
+}
+
+/*Additonal for mobile responsiveness*/
+
+@media (max-width: 450px) {
+  .logo-of-site {
+    font-size: 20px;
+  }
+  .cart-logo {
+    font-size: 20px;
+  }
+  .h2-products {
+    font-size: 16px;
+  }
+  .posh-cart-header-right-section {
+    width: 90px;
+  }
+  ion-icon {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 294px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .h2-products {
+    display: none;
+  }
+}
+
+@media (max-width: 294px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .h2-products {
+    display: none;
+  }
+  .logo-of-site, 
+  .cart-logo {
+    font-size: 15px;
+  }
+  ion-icon {
+    font-size: 25px;
+  }
+}

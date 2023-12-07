@@ -1,0 +1,75 @@
+/*Poppins fonts Regular - Extra Bold*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+body {
+  padding: 50px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/mainBG\(3\).png);
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container {
+
+  min-width: 400px;
+  min-height: 40vh;
+  padding: 80px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  border: 3px solid none;
+  border-radius: 15px;
+  background: transparent;
+  backdrop-filter: blur(15px);
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 2em;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn {
+  min-width: 120px;
+  height: 40px;
+  border-radius: 40px;
+  background: #fff;
+  color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-left: 4px;
+  margin-bottom: 1.5em;
+
+  
+}
+
+.btn:hover {
+  background-color: rgb(219, 219, 219);
+  color: black;
+}
+
+@media (max-width: 767px) {
+  h3 {
+    font-size: 20px
+  }
+}
